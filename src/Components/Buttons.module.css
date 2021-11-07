@@ -1,0 +1,20 @@
+.buttonsWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+}
+.button {
+  width: 100px;
+  height: 30px;
+  border: 2px solid #073131;
+  border-radius: 60px;
+  background: #008b8b;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+}
+.button:focus {
+  background: #12c9c9;
+}
