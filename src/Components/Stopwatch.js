@@ -26,7 +26,7 @@ const Stopwatch = () => {
     };
   }, [isActive]);
 
-  const handleStart = () => {
+  const handleStartStop = () => {
     setIsActive((prevState) => !prevState);
     if (buttonName === "Stop") {
       setTime(0);
@@ -56,7 +56,7 @@ const Stopwatch = () => {
       <p className={styles.title}>STOPWATCH</p>
       <Timer time={time} />
       <Buttons
-        handleStart={handleStart}
+        handleStartStop={handleStartStop}
         handleWait={handleWait}
         buttonName={buttonName}
         handleReset={handleReset}
